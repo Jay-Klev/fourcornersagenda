@@ -1,6 +1,8 @@
-const express = require('express');
-const app = express();
+import Express from "express";
+
+const app = Express();
 const port = 3000;
+const fs = require('fs')
 
 app.get('/', (req, res) => {
 
@@ -8,4 +10,4 @@ app.get('/', (req, res) => {
 
 });
 
-app.listen(port, () => console.log('example app listening on port ${port}!'));
+app.listen(port, () => console.log('example app listening on port ' + ${port} ' .'));
