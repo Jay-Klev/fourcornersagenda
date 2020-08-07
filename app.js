@@ -7,7 +7,7 @@ const fs = require('fs')
 
 app.get('/', (req, res) => {
 
-	res.sendFile(path.join(__dirname, 'ui/html', 'index.html'));
+	res.sendFile(path.join(__dirname/ui, 'html', 'index.html'));
 
 });
 
