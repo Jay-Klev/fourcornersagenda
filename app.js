@@ -1,14 +1,13 @@
-import Express from 'express';
-
-const app = Express();
-const path = require('path')
+const express = "express";
+const app = express();
+const path = require("path");
 const port = 3000;
-const fs = require('fs')
+const fs = require("fs");
 
-app.get('/', (req, res) => {
-
-	res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "ui", "index.html"));
 });
 
-app.listen(port, () => console.log('example app listening on port ' + ${port} ' .'));
+app.listen(port, () =>
+  console.log("example app listening on port ", +port, " .")
+);
