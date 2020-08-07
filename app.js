@@ -1,12 +1,13 @@
-import Express from "express";
+import Express from 'express';
 
 const app = Express();
+const path = require('path')
 const port = 3000;
 const fs = require('fs')
 
 app.get('/', (req, res) => {
 
-	res.send('Hello, Four Corners!!');
+	res.sendFile(path.join(__dirname, 'ui/html', 'index.html'));
 
 });
 
