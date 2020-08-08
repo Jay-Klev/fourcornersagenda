@@ -1,10 +1,15 @@
 const express = require("express");
 const path = require("path");
+const members = require("./ui/members");
 
 const app = express();
 const port = process.env.PORT || 3000;
 const fs = require("fs");
 
+// Gets All Members
+app.get("/api/members", (req, res) => res.json(members));
+
+// set static folder
 app.use(express.static(path.join(__dirname, "ui")));
 
 // app.get("/", (req, res) => {
