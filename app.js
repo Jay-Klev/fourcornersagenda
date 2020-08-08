@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 const path = require("path");
 
 const fs = require("fs");
-const members = require("./members");
+const members = require("./ui/members");
 
 
 const logger = (req, res, next) => {

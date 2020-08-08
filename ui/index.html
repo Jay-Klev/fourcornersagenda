@@ -3,23 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/b04deccf84.js" crossorigin="anonymous"></script>
     <base href="/" />
     <link type="text/css" rel="stylesheet" href="styles.css" />
     <title>Four Corners Agenda</title>
   </head>
   <body>
-    <h1>Four Corners Agenda</h1>
-    <nav>
-      <ul>
-        1
-      </ul>
-      <ul>
-        2
-      </ul>
-      <ul>
-        3
-      </ul>
-    </nav>
-    <h2>test</h2>
+    <header>
+      <a href="#main-menu" 
+				 class="memu-toggle" 
+				 id="main-menu-toggle" 
+				 aria-label="Open main menu">
+				<span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars"
+							aria-hidden="true"></span>
+      </a>
+      <div class="logo">
+        <h1><i class="fasfa-paint-brush"></i>Four Corners Agenda</h1>
+        <h2>Your Web Design Destination</h2>
+      </div>
+      <nav id="main-menu" 
+           class="main-menu"
+					 aira-label="main menu">
+      <a 	href="#main-menu-toggle" 
+					class="menu-close">
+				<span class="sr-only">Close main menu</span>
+        <span class="fa fa-close"></span>
+      </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <a href="#main-menu-toggle" 
+				 class="backdrop" 
+				 hidden 
+				 tabindex="-1"></a>
+    </header>
+    
+    <main>
+      
+    </main>
+
   </body>
 </html>
