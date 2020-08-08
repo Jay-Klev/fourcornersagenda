@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.18.1",
+<<<<<<< HEAD
     "nodejs": "0.0.0",
     "nodemon": "^2.0.4"
   },
@@ -24,4 +25,8 @@
     "url": "https://github.com/Jay-Klev/fourcornersagenda/issues"
   },
   "homepage": "https://github.com/Jay-Klev/fourcornersagenda#readme"
+=======
+    "nodemon": "^2.0.4"
+  }
+>>>>>>> 28bbd77cfdbb5c263c60e3e8b3717dbe66f246aa
 }
