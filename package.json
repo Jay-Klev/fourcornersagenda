@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "app.js",
   "version": "1.0.0",
   "description": "four corners agenda",
   "main": "app.js",
@@ -11,6 +11,17 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
-  }
+    "mysql": "^2.18.1",
+    "nodejs": "0.0.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jay-Klev/fourcornersagenda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jay-Klev/fourcornersagenda/issues"
+  },
+  "homepage": "https://github.com/Jay-Klev/fourcornersagenda#readme"
 }
