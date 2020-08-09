@@ -155,15 +155,15 @@ Note the href targets the main menu (both class and ID)
    Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
   */
   @media (min-width: 800px) {
-      /* header and nav borders rearranged for desktop */
-      header, main {
-          border: none;
-          margin: 0;
-      }
+    /* header and nav borders rearranged for desktop */
+    header, main {
+        border: none;
+        margin: 0;
+    }
     nav {
-        border-top: 4px solid #9EA9C1;
-        border-bottom: 1px solid #dddddd;
-        padding: 0.3rem 0;
+      border-top: 4px solid #9EA9C1;
+      border-bottom: 1px solid #dddddd;
+      padding: 0.3rem 0;
     }
     nav ul {
       text-align: center;
@@ -197,7 +197,7 @@ Note the href targets the main menu (both class and ID)
     }
     /* display the li's horizontally */
     .main-menu li {
-        display: inline-block;
+      display: inline-block;
     }
     /* add cute divider after each li, but not the last one */
     .main-menu li:not(:last-child)::after {
