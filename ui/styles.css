@@ -16,6 +16,21 @@ section > h1 {
     color: #9EA9C1;
 }
 /* Nav styles */
+/* */
+header .row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 header {
   border-bottom: 4px solid #9ea99e;
 }
@@ -23,14 +38,18 @@ main {
   border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
 }
-header .row {
-  display: flex;
-  flex-flow: row nowrap;
+nav ul {
+  list-style: none;
+  margin: 0;
 }
 nav a {
   display: block;
   padding: .75rem;
   text-decoration: none;
+}
+header .row {
+  display: flex;
+  flex-flow: row nowrap;
 }
 /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
   .menu-toggle {
@@ -145,6 +164,16 @@ Note the href targets the main menu (both class and ID)
         border-top: 4px solid #9EA9C1;
         border-bottom: 1px solid #dddddd;
         padding: 0.3rem 0;
+    }
+    nav ul {
+      text-align: center;
+    }
+    /* display the li's horizontally */
+    nav li {
+      display: inline-block;
+    }
+    nav li:not(:last-child)::after {
+      content: " || ";
     }
     /* fa-bars and fa-close not needed on desktop so hide them */
     .menu-toggle,
