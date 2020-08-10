@@ -13,24 +13,24 @@ header, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 section > h1 {
-    color: #9EA9C1;
+  color: #9EA9C1;
 }
 header {
   border-bottom: 4px solid #9ea99e;
   font-weight: 400;
 }
 header h1 {
-    margin: 0;
+  margin: 0;
     font-weight: 400;
     color: #C85028;
 }
 header h2 {
-    font-weight: 400;
+  font-weight: 400;
 }
 /* article styles */
 article {
-    border-bottom: 4px solid #3c2b67;
-    padding-bottom: 2rem;
+  border-bottom: 4px solid #3c2b67;
+  padding-bottom: 2rem;
 }
 img, .floatleft, .floatright {
     display: block;
@@ -38,22 +38,22 @@ img, .floatleft, .floatright {
     max-width: 100%;
 }
 a {
-    color: #C85028;
-    font-weight: bold;
-    text-decoration: none;
+  color: #C85028;
+  font-weight: bold;
+  text-decoration: none;
 }
 a:hover {
     color: #7E64BE;
 }
 /* team styling */
 #team img {
-    display: inline;
+  display: inline;
     max-width: 125px;
-}
+  }
 #team figure {
     margin: 0;
     padding: 0;
-}
+  }
 #team ul {
     display: flex;
     flex-flow: row wrap;
@@ -69,44 +69,44 @@ a:hover {
     padding: 1rem;
 }
 #resources h1 {
-    color: #000;
+  color: #000;
     margin-top: 0;
-}
-#resources h1 small {
-    font-weight: 400;
+  }
+  #resources h1 small {
+  font-weight: 400;
 }
 #resources ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
     list-style-type: none;
-}
+  }
 #resources li {
-    border-bottom: 1px solid #ccc;
-    display: block;
+  border-bottom: 1px solid #ccc;
+  display: block;
 }
 #resources a {
     display: block;
     color: #3c2b67;
     text-decoration: none;
     padding: 0.5rem;
-}
-#resources a:hover {
+  }
+  #resources a:hover {
     color: #6a7a9f;
-}
-section {
+  }
+  section {
     --width: 16;
     --initialbasis: calc(var(--width, 0) / var(--colunms, 16) * 100%);
     --gap: calc((var(--colunms, 16) - var(--width, 0)) * 1%);
     flex-basis: calc(var(--initialbasis) - var(--gap));
-}
-/* Nav styles */
-/* */
-header .row {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.sr-only {
-  position: absolute;
+  }
+  /* Nav styles */
+  /* */
+  header .row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .sr-only {
+    position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -129,14 +129,14 @@ section,
 #team li {
     --width: 16;
     --gap-constant: 0.3%;
-	--initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
     --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
-	flex-basis: calc(var(--initialbasis) - var(--gap));
-}
-#team li {
+    flex-basis: calc(var(--initialbasis) - var(--gap));
+  }
+  #team li {
     --width: 1;
     --gap-constant: 3%;
-}
+  }
 nav ul {
   list-style: none;
   margin: 0;
@@ -151,7 +151,7 @@ header .row {
   flex-flow: row nowrap;
 }
 /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
-  .menu-toggle {
+.menu-toggle {
     color: #333;
     margin-right: 1rem;
   }
@@ -160,11 +160,11 @@ header .row {
   .menu-toggle:focus {
     color: #C85028;
   }
-
+  
   /*
-   Mobile first - this is the mobile menu, positioned offscreen to start 
+  Mobile first - this is the mobile menu, positioned offscreen to start 
   */
-
+  
   /* set the menu in a fixed position occupying 100% of the screen height, so you can't scroll away from it. Have nav scrollbars appear when needed. Any long nav names should be fully visible. */
   .main-menu {
     position: fixed;
@@ -211,32 +211,32 @@ header .row {
     right: 0;
     top: 0;
   }
-
-    /*
-THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px
+  
+  /*
+  THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px
 How is it targeted? Follow the HTML, line 18  <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
 Note the href targets the main menu (both class and ID)
-  */
-  .main-menu:target {
-    display: block;
-    left: 0;
-    outline: none;
-  }
+*/
+.main-menu:target {
+  display: block;
+  left: 0;
+  outline: none;
+}
+
+/* when main menu is targeted (button is clicked), bring the X to the top so it can be clicked */
+.main-menu:target .menu-close {
+  z-index: 1001;
+}
   
-  /* when main menu is targeted (button is clicked), bring the X to the top so it can be clicked */
-  .main-menu:target .menu-close {
-    z-index: 1001;
-  }
-  
-  .main-menu:target ul {
-    position: relative;
+.main-menu:target ul {
+  position: relative;
     z-index: 1000;
   }
   
   /* 
-   We could us `.main-menu:target:after`, but
-   it wouldn't be clickable.
-   The backdrop is the link on line 42, with no content and hidden. Here we display it block, make it fixed, display it behind the menu (note Z values) and give it a color. It occupies any remaining space on the screen after the menu is displayed */
+  We could us `.main-menu:target:after`, but
+  it wouldn't be clickable.
+  The backdrop is the link on line 42, with no content and hidden. Here we display it block, make it fixed, display it behind the menu (note Z values) and give it a color. It occupies any remaining space on the screen after the menu is displayed */
   
   .main-menu:target + .backdrop {
     position: fixed;
@@ -251,7 +251,7 @@ Note the href targets the main menu (both class and ID)
   }
   
   /*
-   Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
+  Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
   */
   @media (min-width: 740px) {
     main {
@@ -264,6 +264,10 @@ Note the href targets the main menu (both class and ID)
     #main {
       --width: 6;
       order: 2;
+    }
+    #team {
+    --width: 11;
+    order: 4;
     }
     #team ul {
       --colunm: 5;
@@ -364,7 +368,7 @@ Note the href targets the main menu (both class and ID)
     main {
       --colunms: 14;
     }
-    #team {
+    #dev {
       --width: 14;
       order: 4;
     }
@@ -372,11 +376,17 @@ Note the href targets the main menu (both class and ID)
       --width: 3;
       order: 3;
     }
+    #inside  article {
+      --width: 10;
+    }
+    #inside  aside {
+      --width: 4;
+    }
     #inside #table article {
-      --width: 14
+      --width: 14;
     }
     #inside #table aside {
-      --width: 14
+      --width: 14;
     }
   }
     @media (min-width: 1200px) {
