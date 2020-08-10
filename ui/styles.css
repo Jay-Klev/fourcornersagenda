@@ -248,21 +248,29 @@ Note the href targets the main menu (both class and ID)
     }
   }
   @media (min-width: 950px) {
-
+main {
+  --colunms: 14;
 }
-@media (min-width: 1200px) {
 #first {
   --width: 5;
-  }
+}
 #main {
   --width: 6;
-  }
-#team {
-  --width: 2;
-  }
+}
+#team: {
+  --width: 14;
+}
 #resources {
   --width: 3;
-  }
+}
+}
+@media (min-width: 1200px) {
+main {
+  --colunms: 16;
+}
+#team {
+  --width: 2;
+}
 }
 
 /* header styles */
