@@ -12,6 +12,12 @@ header, h1, h2, h3, h4, h5, h6 {
     font-family: Nobile, Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+section {
+    --width: 16;
+    --initialbasis: calc(var(--width, 0) / var(--colunms, 16) * 100%);
+    --gap: calc((var(--colunms, 16) - var(--width, 0)) * 1%);
+    flex-basis: calc(var(--initialbasis) - var(--gap));
+}
 section > h1 {
     color: #9EA9C1;
 }
@@ -37,6 +43,10 @@ header {
 main {
   border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  --colunms: 16;
 }
 nav ul {
   list-style: none;
@@ -154,7 +164,15 @@ Note the href targets the main menu (both class and ID)
   /*
    Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
   */
-  @media (min-width: 800px) {
+  @media (min-width: 740px) {
+    .floatleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    }
+  .floatright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    }
     /* header and nav borders rearranged for desktop */
     header, main {
         border: none;
@@ -229,6 +247,24 @@ Note the href targets the main menu (both class and ID)
       text-decoration: none;
     }
   }
+  @media (min-width: 950px) {
+
+}
+@media (min-width: 1200px) {
+#first {
+  --width: 5;
+  }
+#main {
+  --width: 6;
+  }
+#team {
+  --width: 2;
+  }
+#resources {
+  --width: 3;
+  }
+}
+
 /* header styles */
 header {
     font-weight: 400;
