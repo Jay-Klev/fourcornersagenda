@@ -1,6 +1,6 @@
 :root {
     --base-size: 1em;
-    --type-scale: 1.25;
+    --type-scale: 1.2;
     --h5: calc(var(--base-size) * var(--type-scale));
     --h4: calc(var(--h5) * var(--type-scale));
     --h3: calc(var(--h4) * var(--type-scale));
@@ -23,7 +23,7 @@ body {
 }
 p {
   margin-bottom: 1.15rem;
-  font-size: 3.052em;
+/*   font-size: 3.052em; */
 }
 
 header, h1, h2, h3, h4, h5, h6 {
@@ -53,7 +53,7 @@ h5 {
   font-size: var(--h5);
 }
 
-small, .text_small {font-size: 0.8em;}
+small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
 
 section > h1 {
   color: #9EA9C1;
