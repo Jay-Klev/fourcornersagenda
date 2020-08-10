@@ -12,14 +12,92 @@ header, h1, h2, h3, h4, h5, h6 {
     font-family: Nobile, Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+section > h1 {
+    color: #9EA9C1;
+}
+header {
+  border-bottom: 4px solid #9ea99e;
+  font-weight: 400;
+}
+header h1 {
+    margin: 0;
+    font-weight: 400;
+    color: #C85028;
+}
+header h2 {
+    font-weight: 400;
+}
+/* article styles */
+article {
+    border-bottom: 4px solid #3c2b67;
+    padding-bottom: 2rem;
+}
+img, .floatleft, .floatright {
+    display: block;
+    margin: 1rem auto 0 auto;
+    max-width: 100%;
+}
+a {
+    color: #C85028;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: #7E64BE;
+}
+/* team styling */
+#team img {
+    display: inline;
+    max-width: 125px;
+}
+#team figure {
+    margin: 0;
+    padding: 0;
+}
+#team ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    --colunms: 2;
+    padding: 0;
+    margin: 0;
+}
+/* resources styling */
+#resources {
+    background-color: #f1f1f1;
+    padding: 1rem;
+}
+#resources h1 {
+    color: #000;
+    margin-top: 0;
+}
+#resources h1 small {
+    font-weight: 400;
+}
+#resources ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#resources li {
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+#resources a {
+    display: block;
+    color: #3c2b67;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+#resources a:hover {
+    color: #6a7a9f;
+}
 section {
     --width: 16;
     --initialbasis: calc(var(--width, 0) / var(--colunms, 16) * 100%);
     --gap: calc((var(--colunms, 16) - var(--width, 0)) * 1%);
     flex-basis: calc(var(--initialbasis) - var(--gap));
-}
-section > h1 {
-    color: #9EA9C1;
 }
 /* Nav styles */
 /* */
@@ -37,9 +115,6 @@ header .row {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-header {
-  border-bottom: 4px solid #9ea99e;
-}
 main {
   border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
@@ -47,6 +122,20 @@ main {
   flex-flow: row wrap;
   justify-content: space-between;
   --colunms: 16;
+}
+section,
+#inside article,
+#inside aside,
+#team li {
+    --width: 16;
+    --gap-constant: 0.3%;
+	--initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+	flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+#team li {
+    --width: 1;
+    --gap-constant: 3%;
 }
 nav ul {
   list-style: none;
@@ -165,13 +254,37 @@ Note the href targets the main menu (both class and ID)
    Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
   */
   @media (min-width: 740px) {
-    .floatleft {
-    float: left;
-    margin: 0 1rem 1rem 0;
+    main {
+      --colunms: 11;
     }
-  .floatright {
-    float: right;
-    margin: 0 0 1rem 1rem;
+    #first {
+      --width: 5;
+      order: 1;
+    }
+    #main {
+      --width: 6;
+      order: 2;
+    }
+    #team ul {
+      --colunm: 5;
+    }
+    #resources {
+      --width: 11;
+      order: 4;
+    }
+    .floatleft {
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+    .floatright {
+      float: right;
+      margin: 0 0 1rem 1rem;
+    }
+    #inside article {
+      --width: 7;
+    }
+    #inside aside {
+      --width: 4;
     }
     /* header and nav borders rearranged for desktop */
     header, main {
@@ -220,7 +333,7 @@ Note the href targets the main menu (both class and ID)
     /* add cute divider after each li, but not the last one */
     .main-menu li:not(:last-child)::after {
       content: " || ";
-  }
+    }
 /* above style the same as 
     .main-menu li::after {
         content: " || ";
@@ -248,103 +361,41 @@ Note the href targets the main menu (both class and ID)
     }
   }
   @media (min-width: 950px) {
-main {
-  --colunms: 14;
-}
-#first {
-  --width: 5;
-}
-#main {
-  --width: 6;
-}
-#team: {
-  --width: 14;
-}
-#resources {
-  --width: 3;
-}
-}
-@media (min-width: 1200px) {
-main {
-  --colunms: 16;
-}
-#team {
-  --width: 2;
-}
-}
-
-/* header styles */
-header {
-    font-weight: 400;
-}
-header h1 {
-    margin: 0;
-    font-weight: 400;
-    color: #C85028;
-}
-header h2 {
-    font-weight: 400;
-}
-
-/* article styles */
-article {
-    border-bottom: 4px solid #3c2b67;
-    padding-bottom: 2rem;
-}
-img, .floatleft, .floatright {
-    display: block;
-    margin: 1rem auto 0 auto;
-    max-width: 100%;
-}
-a {
-    color: #C85028;
-    font-weight: bold;
-    text-decoration: none;
-}
-a:hover {
-    color: #7E64BE;
-}
-/* team styling */
-#team img {
-    display: inline;
-    max-width: 125px;
-}
-#team figure {
-    margin: 0;
-    padding: 0;
-}
-#team ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-/* resources styling */
-#resources {
-    background-color: #f1f1f1;
-    padding: 1rem;
-}
-#resources h1 {
-    color: #000;
-    margin-top: 0;
-}
-#resources h1 small {
-    font-weight: 400;
-}
-#resources ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-#resources li {
-    border-bottom: 1px solid #ccc;
-    display: block;
-}
-#resources a {
-    display: block;
-    color: #3c2b67;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-#resources a:hover {
-    color: #6a7a9f;
-}
+    main {
+      --colunms: 14;
+    }
+    #team {
+      --width: 14;
+      order: 4;
+    }
+    #resources {
+      --width: 3;
+      order: 3;
+    }
+    #inside #table article {
+      --width: 14
+    }
+    #inside #table aside {
+      --width: 14
+    }
+  }
+    @media (min-width: 1200px) {
+      #team ul {
+        --colunms: 1;
+      }
+    main {
+      --colunms: 16;
+    }
+    #team {
+      --width: 2;
+      --order: 3;
+    }
+    #resources {
+      --width: 3;
+      order: 4; 
+    }
+    #inside aside,
+    #inside #table aside {
+      --width: 4;
+    }
+    }
