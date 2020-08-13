@@ -1,6 +1,6 @@
 :root {
     --base-size: 1em;
-    --type-scale: 1.25;
+    --type-scale: 1.125;
     --h5: calc(var(--base-size) * var(--type-scale));
     --h4: calc(var(--h5) * var(--type-scale));
     --h3: calc(var(--h4) * var(--type-scale));
@@ -408,6 +408,7 @@ Note the href targets the main menu (both class and ID)
     }
   }
   @media (min-width: 950px) {
+    --type-scale: 1.2;
     main {
       --colunms: 14;
     }
@@ -432,10 +433,11 @@ Note the href targets the main menu (both class and ID)
       --width: 14;
     }
   }
-    @media (min-width: 1200px) {
-      #team ul {
-        --colunms: 1;
-      }
+  @media (min-width: 1200px) {
+    --type-scale: 1.25;
+    #team ul {
+      --colunms: 1;
+    }
     main {
       --colunms: 16;
     }
