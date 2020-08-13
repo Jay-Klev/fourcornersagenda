@@ -32,7 +32,7 @@ section > h1 {
   
 }
 header {
-  border-bottom: 4px solid #9ea99e;
+  /* border-bottom: 4px solid #9ea99e; */
   font-weight: 400;
   background-color: #f8f4f2;
 }
@@ -46,10 +46,7 @@ header h2 {
   font-weight: 400;
 }
 header #logo-image {
-  float: right;
-  width: 135px;
-  height: 135px;
-  margin-bottom: 10px;
+  display: inline;
   margin-right: 10px;
 }
 
