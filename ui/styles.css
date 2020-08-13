@@ -42,6 +42,13 @@ header h1 {
 header h2 {
   font-weight: 400;
 }
+#logo {
+  float: left;
+  width: 135px;
+  height: 135px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
 /* article styles */
 article {
