@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400|Poppins:400');
 
 html {
-    box-sizing: border-box; -
+    box-sizing: border-box;
     font-size: 100%;
 }
 *, *::before, *::after {
@@ -93,11 +93,11 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
     padding: 0;
   }
 #team ul {
+    --colunms: 2;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     list-style-type: none;
-    --colunms: 2;
     padding: 0;
     margin: 0;
 }
