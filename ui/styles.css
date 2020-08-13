@@ -45,7 +45,7 @@ header h1 {
 header h2 {
   font-weight: 400;
 }
-#logo {
+header #logo-image {
   float: right;
   width: 135px;
   height: 135px;
