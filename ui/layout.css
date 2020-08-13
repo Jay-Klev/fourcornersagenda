@@ -1,0 +1,48 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  --colunms: 16;
+}
+section {
+	--width: 16;
+  --initialbasis: calc(var(--width, 0) / var(--colunms, 16) * 100%);
+  --gap: calc((var(--colunms, 16) - var(--width, 0)) * 1%);
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+
+/* grid system mobile first */
+@media (min-width: 740px) {
+  .floatleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+  .floatright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+}
+@media (min-width: 950px) {
+#first {
+  --width: 5;
+  }
+#main {
+  --width: 6;
+  --colunms: 16;
+  }
+#team {
+  --width: 14;
+  }
+#resources {
+  --width: 3;
+  }
+}
+@media (min-width: 1200px) {
+  #main
+#team {
+  --width: 2;
+  }
+#resources {
+  --width: 3;
+  }
+}
