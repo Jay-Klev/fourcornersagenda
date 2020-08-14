@@ -36,6 +36,10 @@ header {
   font-weight: 400;
   background-color: #f8f4f2;
 }
+  header .row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 header h1 {
   margin: 0;
     font-weight: 400;
@@ -93,7 +97,7 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
 /* team styling */
 #team img {
   display: inline;
-    max-width: 125px;
+    max-width: 250px;
   }
 #team figure {
     margin: 0;
@@ -147,10 +151,6 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
   /* } */
   /* Nav styles */
   /* */
-  header .row {
-    display: flex;
-    flex-flow: row nowrap;
-  }
   .sr-only {
     position: absolute;
   width: 1px;
