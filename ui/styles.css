@@ -112,7 +112,7 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
 /* team styling */
 #team img {
   display: inline;
-    max-width: 250px;
+    max-width: 125px;
   }
 #team figure {
     margin: 0;
@@ -480,8 +480,12 @@ Note the href targets the main menu (both class and ID)
     }
     #team {
       --width: 2;
-      --order: 3;
+      order: 3;
     }
+    #team img {
+  display: inline;
+    max-width: 200px;
+  }
     #resources {
       --width: 3;
       order: 4; 
