@@ -201,7 +201,7 @@ section,
   #team li .quote {
     border-radius: 10px;
     position: relative;
-    padding: 20px;
+    padding: 5px;
     left: 40px;
     background-color:#660022;
     color: whitesmoke;
@@ -214,7 +214,7 @@ section,
     height: 0;
     border: 20px solid #660022;
     border-color: transparent transparent #660022;
-    top: 20px;
+    top: -40px;
     left: 20px;
   }
 nav ul {
