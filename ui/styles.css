@@ -46,7 +46,7 @@ header #logo-image {
     display: flex;
     flex-flow: row nowrap;
   }
-header .header {
+header #myHeader .header {
   display: inline;
   padding: 10px 16px;
   width: 100%;
