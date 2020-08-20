@@ -73,6 +73,21 @@ a:hover {
     color: #7E64BE;
 }
 
+a[href^=http]:hover {
+  position: relative;
+}
+
+a[href^=http]:hover:after {
+  content: attr(href);
+  position: absolute;
+  top: 1em;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 3px 5px;
+  line-height: 1;
+}
+
 p {
   margin-bottom: 1.15rem;
 }
@@ -182,6 +197,25 @@ section,
   #team li {
     --width: 1;
     --gap-constant: 3%;
+  }
+  #team li .quote {
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    left: 40px;
+    background-color:#660022;
+    color: whitesmoke;
+    float: left;
+  }
+  #team li .quote::after {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border: 20px solid #660022;
+    border-color: transparent transparent #660022;
+    top: 20px;
+    left: 20px;
   }
 nav ul {
   list-style: none;
@@ -445,7 +479,7 @@ Note the href targets the main menu (both class and ID)
       --colunms: 16;
     }
     #team {
-      --width: 3;
+      --width: 2;
       --order: 3;
     }
     #resources {
