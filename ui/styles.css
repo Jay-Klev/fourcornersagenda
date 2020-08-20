@@ -36,6 +36,13 @@ header {
   font-weight: 400;
   background-color: #f8f4f2;
 }
+header #logo-image {
+  display: inline;
+  margin-right: 10px;
+  width: 125px;
+  height: 125px;
+  background-image: url("photos/logo-home.png");
+}
   header .row {
     display: flex;
     flex-flow: row nowrap;
@@ -90,6 +97,7 @@ a[href^=http]:hover:after {
 
 p {
   margin-bottom: 1.15rem;
+  hyphens: auto;
 }
 h1 {
   margin-top: 0;
@@ -472,11 +480,11 @@ Note the href targets the main menu (both class and ID)
   }
   @media (min-width: 1200px) {
     --type-scale: 1.25;
-    #team ul {
-      --colunms: 1;
-    }
     main {
       --colunms: 16;
+    }
+    #team ul {
+      --colunms: 1;
     }
     #team {
       --width: 2;
