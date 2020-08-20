@@ -47,9 +47,9 @@ header #logo-image {
     flex-flow: row nowrap;
   }
 header .header {
+  display: inline;
   padding: 10px 16px;
   width: 100%;
-  height: 125px;
   background-color: #f8f4f2;
   background-image: url("photos/Totem-on-shore-banner1.png");
   background-repeat: no-repeat;
@@ -63,10 +63,6 @@ header h1 {
 }
 header h2 {
   font-weight: 400;
-}
-header #logo-image {
-  display: inline;
-  margin-right: 10px;
 }
 
 /* article styles */
