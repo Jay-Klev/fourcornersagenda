@@ -38,18 +38,18 @@ header {
 header #logo-image {
   display: inline;
   margin-right: 10px;
-  width: 125px;
-  height: 125px;
+  /* width: 125px; */
+  /* height: 125px; */
   background-image: url("photos/logo-home.png");
 }
   header .row {
     display: flex;
     flex-flow: row nowrap;
   }
-header .header {
+div #myHeader .header {
   display: inline;
   padding: 10px 16px;
-  width: 100%;
+  /* width: 100%; */
   background-color: #f8f4f2;
   background-image: url("photos/Totem-on-shore-banner1.png");
   background-repeat: no-repeat;
