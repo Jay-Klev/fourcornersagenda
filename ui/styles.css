@@ -35,12 +35,15 @@ header {
   /* border-bottom: 4px solid #9ea99e; */
   font-weight: 400;
   background-color: #f8f4f2;
+  background-image: url("photos/Totem-on-shore-banner1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 header #logo-image {
   display: inline;
   margin-right: 10px;
-  width: 125px;
-  height: 125px;
+  /* width: 125px; */
+  /* height: 125px; */
   background-image: url("photos/logo-home.png");
 }
   header .row {
