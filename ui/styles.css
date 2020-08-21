@@ -27,13 +27,23 @@ header, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.15;
 }
+main {
+  border-top: 2px solid #dddddd;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  --colunms: 16;
+}
 section > h1 {
   color: #9EA9C1;
-  
 }
 header {
   /* border-bottom: 4px solid #9ea99e; */
   font-weight: 400;
+  background-image: url("photos/totem-on-shore-banner1.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 header #logo-image {
   display: inline;
@@ -46,23 +56,22 @@ header #logo-image {
     display: flex;
     flex-flow: row nowrap;
   }
-header #myHeader .header {
-  display: inline;
-  padding: 10px 16px;
-  width: 100%;
-  background-color: #f8f4f2;
-  background-image: url("photos/Totem-on-shore-banner1.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-}
 header h1 {
   margin: 0;
     font-weight: 400;
     color: #C85028;
-    
 }
 header h2 {
   font-weight: 400;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav a {
+  display: block;
+  padding: .75rem;
+  text-decoration: none;
 }
 
 /* article styles */
@@ -188,14 +197,6 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-main {
-  border-top: 2px solid #dddddd;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  --colunms: 16;
-}
 section,
 #inside article,
 #inside aside,
@@ -229,19 +230,6 @@ section,
     top: -40px;
     left: 20px;
   }
-nav ul {
-  list-style: none;
-  margin: 0;
-}
-nav a {
-  display: block;
-  padding: .75rem;
-  text-decoration: none;
-}
-header .row {
-  display: flex;
-  flex-flow: row nowrap;
-}
 /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
 .menu-toggle {
     color: #333;
