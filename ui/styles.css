@@ -133,6 +133,9 @@ h5 {
 small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
 
 /* team styling */
+#team {
+  
+}
 #team img {
   display: inline;
     max-width: 125px;
@@ -144,12 +147,51 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
 #team ul {
     --colunms: 2;
     display: flex;
+/*     flex-direction: row; */
     flex-flow: row wrap;
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+#team li {
+    flex: 0 0 100px;
+/*     width: 200px; */
+}
+section,
+#inside article,
+#inside aside,
+#team li {
+    --width: 16;
+    --gap-constant: 0.3%;
+    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+    flex-basis: calc(var(--initialbasis) - var(--gap));
+  }
+  #team li {
+    --width: 1;
+    --gap-constant: 3%;
+  }
+  #team li .quote {
+    flex: 10%;
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+    left: 40px;
+    background-color:#660022;
+    color: whitesmoke;
+    float: left;
+  }
+  #team li .quote::after {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border: 20px solid #660022;
+    border-color: transparent transparent #660022;
+    top: -40px;
+    left: 20px;
+  }
 /* resources styling */
 #resources {
     background-color: #f1f1f1;
@@ -199,39 +241,6 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-section,
-#inside article,
-#inside aside,
-#team li {
-    --width: 16;
-    --gap-constant: 0.3%;
-    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
-    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
-    flex-basis: calc(var(--initialbasis) - var(--gap));
-  }
-  #team li {
-    --width: 1;
-    --gap-constant: 3%;
-  }
-  #team li .quote {
-    border-radius: 10px;
-    position: relative;
-    padding: 5px;
-    left: 40px;
-    background-color:#660022;
-    color: whitesmoke;
-    float: left;
-  }
-  #team li .quote::after {
-    position: absolute;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border: 20px solid #660022;
-    border-color: transparent transparent #660022;
-    top: -40px;
-    left: 20px;
-  }
 /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
 .menu-toggle {
     color: #333;
@@ -337,26 +346,26 @@ Note the href targets the main menu (both class and ID)
   */
   @media (min-width: 740px) {
     main {
-      --colunms: 11;
+/*       --colunms: 11; */
     }
     #first {
-      --width: 5;
-      order: 1;
+/*       --width: 5; */
+/*       order: 1; */
     }
     #main {
-      --width: 6;
-      order: 2;
+/*       --width: 6; */
+/*       order: 2; */
     }
     #team {
-    --width: 11;
-    order: 3;
+/*     --width: 11; */
+/*     order: 3; */
     }
     #team ul {
-      --colunm: 5;
+/*       --colunm: 5; */
     }
     #resources {
-      --width: 11;
-      order: 4;
+/*       --width: 11; */
+/*       order: 4; */
     }
     .floatleft {
       float: left;
@@ -449,51 +458,51 @@ Note the href targets the main menu (both class and ID)
   @media (min-width: 950px) {
     --type-scale: 1.2;
     main {
-      --colunms: 14;
+/*       --colunms: 14; */
     }
     #team {
-      --width: 14;
-      order: 4;
+/*       --width: 14; */
+/*       order: 4; */
     }
     #resources {
-      --width: 3;
-      order: 3;
+/*       --width: 3; */
+/*       order: 3; */
     }
     #inside  article {
-      --width: 10;
+/*       --width: 10; */
     }
     #inside  aside {
-      --width: 4;
+/*       --width: 4; */
     }
     #inside #table article {
-      --width: 14;
+/*       --width: 14; */
     }
     #inside #table aside {
-      --width: 14;
+/*       --width: 14; */
     }
   }
   @media (min-width: 1200px) {
     --type-scale: 1.25;
     main {
-      --colunms: 16;
+/*       --colunms: 16; */
     }
     #team ul {
-      --colunms: 1;
+/*       --colunms: 1; */
     }
     #team {
-      --width: 2;
-      order: 3;
+/*       --width: 2; */
+/*       order: 3; */
     }
     #team img {
   display: inline;
     max-width: 200px;
   }
     #resources {
-      --width: 3;
-      order: 4; 
+/*       --width: 3; */
+/*       order: 4;  */
     }
     #inside aside,
     #inside #table aside {
-      --width: 4;
+/*       --width: 4; */
     }
     }
