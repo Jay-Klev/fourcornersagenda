@@ -130,6 +130,16 @@ h4 {
 h5 {
   font-size: var(--h5);
 }
+section,
+#inside article,
+#inside aside,
+#team li {
+    --width: 16;
+    --gap-constant: 0.3%;
+    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+    flex-basis: calc(var(--initialbasis) - var(--gap));
+  }
 small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
 
 /* team styling */
@@ -158,16 +168,6 @@ small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
     flex: 0 0 100px;
 /*     width: 200px; */
 }
-section,
-#inside article,
-#inside aside,
-#team li {
-    --width: 16;
-    --gap-constant: 0.3%;
-    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
-    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
-    flex-basis: calc(var(--initialbasis) - var(--gap));
-  }
   #team li {
     --width: 1;
     --gap-constant: 3%;
