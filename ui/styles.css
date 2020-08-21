@@ -41,9 +41,10 @@ section > h1 {
 header {
   /* border-bottom: 4px solid #9ea99e; */
   font-weight: 400;
-  background-image: url("photos/totem-on-shore-banner1.png");
+  background-image: url("photos/totem-on-shore-banner2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 100%;
 }
 header #logo-image {
   /* display: inline; */
