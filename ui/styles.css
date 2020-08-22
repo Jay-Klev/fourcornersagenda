@@ -17,23 +17,18 @@ html {
     box-sizing: inherit;
 }
 body {
-    background-color: white;
-    font-family: 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
-    margin: 1rem;
+  background-color: white;
+  background-image: url("photos/bg-blue-white-diagonal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 1rem;
 }
 header, h1, h2, h3, h4, h5, h6 {
     margin: 2.75rem 0 1.05rem;
     font-family: 'poppins', Nobile, Arial, Helvetica, sans-serif;
     font-weight: 500;
     line-height: 1.15;
-}
-main {
-  border-top: 2px solid #dddddd;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  --colunms: 16;
 }
 section > h1 {
   color: #9EA9C1;
@@ -74,6 +69,14 @@ nav a {
   display: block;
   padding: .75rem;
   text-decoration: none;
+}
+main {
+  border-top: 2px solid #dddddd;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  --colunms: 16;
 }
 
 /* article styles */
