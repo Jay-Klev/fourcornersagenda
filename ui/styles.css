@@ -20,7 +20,7 @@ body {
   background-color: white;
   background-image: url("photos/bg-blue-white-diagonal.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
   font-family: 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
   margin: 1rem;
 }
