@@ -59,6 +59,7 @@ header h1 {
   margin: 0;
     font-weight: 400;
     color: #b11111;
+    padding: 80px 20px 0;
 }
 nav ul {
   list-style: none;
@@ -81,9 +82,11 @@ nav a {
   font-variant: normal; 
   text-transform: none; 
   background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
-  display: inline-block;}
+  display: inline-block;
+}
 .myButton:hover {
-  background: #1C6EA4; }
+  background: #1C6EA4; 
+}
 .myButton:active {
   background: #144E75; 
 }
