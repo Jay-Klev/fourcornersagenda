@@ -86,9 +86,13 @@ section > h1 {
 }
 /* article styles */
 article {
-  background-color: #ccc;
   padding-bottom: 2rem;
+}
+article div {
+  background-color: white;
   box-shadow: 0 0 8px 8px #17aa01 inset;
+/*   margin: 10px 25px 10px; */
+  padding: 3px 0  30px 0;
 }
 img, .floatleft, .floatright {
     display: block;
