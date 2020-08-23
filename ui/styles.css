@@ -40,6 +40,7 @@ header {
   background-image: url("photos/totem-on-shore-banner2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 50%;
   box-shadow: 0 0 8px 8px transparent inset;
 }
 header #logo-image {
