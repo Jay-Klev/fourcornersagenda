@@ -31,9 +31,6 @@ header, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.15;
 }
-section > h1 {
-  color: #9EA9C1;
-}
 header {
   /* border-bottom: 4px solid #9ea99e; */
   font-weight: 400;
@@ -70,26 +67,6 @@ nav a {
   padding: .75rem;
   text-decoration: none;
 }
-.myButton {
-  color: rgb(255, 255, 255); 
-  font-size: 16px; 
-  line-height: 16px; 
-  padding: 5px; 
-  border-radius: 10px; 
-  font-weight: normal; 
-  text-decoration: none; 
-  font-style: normal; 
-  font-variant: normal; 
-  text-transform: none; 
-  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
-  display: inline-block;
-}
-.myButton:hover {
-  background: #1C6EA4; 
-}
-.myButton:active {
-  background: #144E75; 
-}
 main {
   border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
@@ -102,6 +79,9 @@ main {
 }
 section {
 
+}
+section > h1 {
+  color: #9EA9C1;
 }
 /* article styles */
 article {
@@ -368,6 +348,26 @@ Note the href targets the main menu (both class and ID)
     background: rgba(0,0,0,.85);
     cursor: default;
   }
+.myButton {
+  color: rgb(255, 255, 255); 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 5px; 
+  border-radius: 10px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+  display: inline-block;
+}
+.myButton:hover {
+  background: #1C6EA4; 
+}
+.myButton:active {
+  background: #144E75; 
+}
   
   /*
   Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
