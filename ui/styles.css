@@ -414,7 +414,6 @@ Note the href targets the main menu (both class and ID)
         margin: 0;
     }
     nav {
-      border-top: 4px solid #9EA9C1;
       border-bottom: 1px solid #dddddd;
       padding: 0.3rem 0;
     }
