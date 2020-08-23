@@ -455,7 +455,7 @@ Note the href targets the main menu (both class and ID)
     }
     /* desktop assumes a pointer display */
     .main-menu a {
-      color: #C85028;
+      color: whitesmoke;
       border-bottom: none;
       display: inline;
     }
