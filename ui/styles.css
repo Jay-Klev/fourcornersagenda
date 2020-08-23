@@ -17,20 +17,13 @@ html {
     box-sizing: inherit;
 }
 body {
-  background-color: black;
-  /* background-image: url("photos/bg-green-circles.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-  font-family: 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
-  margin: 1rem;
-}
-body::after {
+  background-color: greenyellow;
   background-image: url("photos/bg-green-circles.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  opacity: 0.7;
+  font-family: 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 1rem;
 }
 header, h1, h2, h3, h4, h5, h6 {
     margin: 2.75rem 0 1.05rem;
