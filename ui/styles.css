@@ -71,6 +71,24 @@ nav a {
   padding: .75rem;
   text-decoration: none;
 }
+.myButton {
+  color: rgb(255, 255, 255); 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 5px; 
+  border-radius: 10px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+  display: inline-block;}
+.myButton:hover {
+  background: #1C6EA4; }
+.myButton:active {
+  background: #144E75; 
+}
 main {
   border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
@@ -407,9 +425,6 @@ Note the href targets the main menu (both class and ID)
     nav li {
       display: inline-block;
     }
-    nav li:not(:last-child)::after {
-      content: " || ";
-    }
     /* fa-bars and fa-close not needed on desktop so hide them */
     .menu-toggle,
     .main-menu .menu-close {
@@ -434,18 +449,6 @@ Note the href targets the main menu (both class and ID)
     .main-menu li {
       display: inline-block;
     }
-    /* add cute divider after each li, but not the last one */
-    .main-menu li:not(:last-child)::after {
-      content: " || ";
-    }
-/* above style the same as 
-    .main-menu li::after {
-        content: " || ";
-    }
-    .main-menu li:last-child::after {
-      content: "";
-  }
-*/
     /* undo off canvas style */
     .main-menu li:first-child a {
         border-top: none;
