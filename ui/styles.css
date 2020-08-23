@@ -56,6 +56,7 @@ header h1 {
   margin: 0;
     font-weight: 400;
     color: #b11111;
+    text-shadow: 2px 2px 5px black;
     padding: 80px 20px 0;
 }
 nav ul {
@@ -148,8 +149,15 @@ section,
     --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
     flex-basis: calc(var(--initialbasis) - var(--gap));
   }
-small, .text_small { font-size: calc(var(--base-size) / var(--base-scale));}
-
+small, .text_small { 
+  font-size: calc(var(--base-size) / var(--base-scale));
+}
+#first p {
+  margin-bottom: 1.15rem;
+  hyphens: auto;
+  margin: 5px 100px 5px
+/*   max-width: 500px; */
+}
 /* team styling */
 #team {
   
