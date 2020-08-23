@@ -41,7 +41,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 50%;
-  box-shadow: 0 0 8px 8px transparent inset;
+  box-shadow: 0 0 8px 8px #17aa01 inset;
 }
 header #logo-image {
   /* display: inline; */
