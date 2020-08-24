@@ -72,7 +72,6 @@ main {
   border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
   text-align: center;
-  padding: 0 10%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -91,8 +90,7 @@ article {
 article div {
   background-color: white;
   box-shadow: 0 0 8px 8px #17aa01 inset;
-/*   margin: 10px 25px 10px; */
-  padding: 3px 0  30px 0;
+  padding: 2px 0  25px 0;
 }
 img, .floatleft, .floatright {
     display: block;
@@ -122,7 +120,6 @@ a[href^=http]:hover:after {
   padding: 3px 5px;
   line-height: 1;
 }
-
 p {
   margin-bottom: 1.15rem;
   hyphens: auto;
@@ -159,8 +156,7 @@ small, .text_small {
 #first p {
   margin-bottom: 1.15rem;
   hyphens: auto;
-  margin: 5px 15% 5px;
-/*   max-width: 500px; */
+  margin: 5px 5% 5px;
 }
 /* team styling */
 #team {
@@ -387,6 +383,7 @@ Note the href targets the main menu (both class and ID)
   @media (min-width: 740px) {
     main {
 /*       --colunms: 11; */
+    margin: 20px 10%;
     }
     #first {
 /*       --width: 5; */
@@ -406,6 +403,10 @@ Note the href targets the main menu (both class and ID)
     #resources {
 /*       --width: 11; */
 /*       order: 4; */
+    }
+    article div {
+      margin: 20px 5% 10px;
+      padding: 3px 0  30px 0;
     }
     .floatleft {
       float: left;
@@ -503,6 +504,10 @@ Note the href targets the main menu (both class and ID)
     #inside #table aside {
 /*       --width: 14; */
     }
+    article div {
+      margin: 20px 20% 10px;
+      padding: 3px 0  30px 0;
+    }
   }
   @media (min-width: 1200px) {
     --type-scale: 1.25;
@@ -528,4 +533,8 @@ Note the href targets the main menu (both class and ID)
     #inside #table aside {
 /*       --width: 4; */
     }
+    article div {
+      margin: 20px 24% 10px;
+      padding: 3px 0  30px 0;
     }
+  }
