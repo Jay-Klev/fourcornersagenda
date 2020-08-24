@@ -162,7 +162,6 @@ small, .text_small {
 }
 #team img {
   display: inline;
-  max-width: 125px;
   }
 #team figure {
   margin: 0;
@@ -173,14 +172,14 @@ small, .text_small {
   display: flex;
 /*     flex-direction: row; */
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 #team li {
-    flex: 0 0 100px;
-/*     width: 200px; */
+  flex: 0 0 200px;
+  margin: 0 20px;
 }
 #team li {
   --width: 1;
@@ -191,7 +190,7 @@ small, .text_small {
   border-radius: 10px;
   position: relative;
   padding: 5px;
-  left: 40px;
+  left: 10px;
   background-color:#660022;
   color: whitesmoke;
   float: left;
@@ -383,6 +382,12 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   #team ul {
 /*       --colunm: 5; */
   }
+#team li {
+  flex: 0 0 310px;
+}
+#team li .quote {
+  left: 20px; 
+}
   #resources {
 /*       --width: 11; */
 /*       order: 4; */
@@ -470,6 +475,10 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
 /*       --width: 14; */
 /*       order: 4; */
   }
+#team li {
+  flex: 1 0 400;
+  margin: 0 200px;
+}
   #resources {
 /*       --width: 3; */
 /*       order: 3; */
@@ -503,10 +512,6 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
 /*       --width: 2; */
 /*       order: 3; */
   }
-  #team img {
-    display: inline;
-    max-width: 200px;
-}
   #resources {
 /*       --width: 3; */
 /*       order: 4;  */
