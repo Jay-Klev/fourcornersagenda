@@ -1,24 +1,24 @@
 :root {
-    --base-size: 1em;
-    --type-scale: 1.125;
-    --h5: calc(var(--base-size) * var(--type-scale));
-    --h4: calc(var(--h5) * var(--type-scale));
-    --h3: calc(var(--h4) * var(--type-scale));
-    --h2: calc(var(--h3) * var(--type-scale));
-    --h1: calc(var(--h2) * var(--type-scale));
+  --base-size: 1em;
+  --type-scale: 1.125;
+  --h5: calc(var(--base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:400|Poppins:400');
 
 html {
-    box-sizing: border-box;
-    font-size: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 *, *::before, *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 body {
   background-color: greenyellow;
-  background-image: url("photos/bg-green-circles.png");
+  background-image: url("photos/bg-whiteMarble.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -26,10 +26,10 @@ body {
   margin: 1rem;
 }
 header, h1, h2, h3, h4, h5, h6 {
-    margin: 2.75rem 0 1.05rem;
-    font-family: 'poppins', Nobile, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: 1.15;
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'poppins', Nobile, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.15;
 }
 header {
   /* border-bottom: 4px solid #9ea99e; */
@@ -38,7 +38,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 50%;
-  box-shadow: 0 0 8px 8px #17aa01 inset;
+  box-shadow: 0 0 8px 8px #e7edf0 inset;
 }
 header #logo-image {
   /* display: inline; */
@@ -54,10 +54,10 @@ header .row {
 }
 header h1 {
   margin: 0;
-    font-weight: 400;
-    color: #b11111;
-    text-shadow: 2px 2px 5px black;
-    padding: 80px 20px 0;
+  font-weight: 400;
+  color: #b11111;
+  text-shadow: 2px 2px 5px black;
+  padding: 80px 20px 0;
 }
 nav ul {
   list-style: none;
@@ -93,9 +93,9 @@ article div {
   padding: 2px 0  25px 0;
 }
 img, .floatleft, .floatright {
-    display: block;
-    margin: 1rem auto 0 auto;
-    max-width: 100%;
+  display: block;
+  margin: 1rem auto 0 auto;
+  max-width: 100%;
 }
 a {
   color: #C85028;
@@ -103,7 +103,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-    color: #7E64BE;
+  color: #7E64BE;
 }
 
 a[href^=http]:hover {
@@ -144,12 +144,12 @@ section,
 #inside article,
 #inside aside,
 #team li {
-    --width: 16;
-    --gap-constant: 0.3%;
-    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
-    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
-    flex-basis: calc(var(--initialbasis) - var(--gap));
-  }
+  --width: 16;
+  --gap-constant: 0.3%;
+  --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+  --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+}
 small, .text_small { 
   font-size: calc(var(--base-size) / var(--base-scale));
 }
@@ -164,91 +164,83 @@ small, .text_small {
 }
 #team img {
   display: inline;
-    max-width: 125px;
+  max-width: 125px;
   }
 #team figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   }
 #team ul {
-    --colunms: 2;
-    display: flex;
+  --colunms: 2;
+  display: flex;
 /*     flex-direction: row; */
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 #team li {
     flex: 0 0 100px;
 /*     width: 200px; */
 }
-  #team li {
-    --width: 1;
-    --gap-constant: 3%;
-  }
-  #team li .quote {
-    flex: 10%;
-    border-radius: 10px;
-    position: relative;
-    padding: 5px;
-    left: 40px;
-    background-color:#660022;
-    color: whitesmoke;
-    float: left;
-  }
-  #team li .quote::after {
-    position: absolute;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border: 20px solid #660022;
-    border-color: transparent transparent #660022;
-    top: -40px;
-    left: 20px;
-  }
+#team li {
+  --width: 1;
+  --gap-constant: 3%;
+}
+#team li .quote {
+  flex: 10%;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+  left: 40px;
+  background-color:#660022;
+  color: whitesmoke;
+  float: left;
+}
+#team li .quote::after {
+  position: absolute;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border: 20px solid #660022;
+  border-color: transparent transparent #660022;
+  top: -40px;
+  left: 20px;
+}
 /* resources styling */
 #resources {
-    background-color: #f1f1f1;
-    padding: 1rem;
+  background-color: #f1f1f1;
+  padding: 1rem;
 }
 #resources h1 {
   color: #000;
-    margin-top: 0;
-  }
-  #resources h1 small {
+  margin-top: 0;
+}
+#resources h1 small {
   font-weight: 400;
 }
 #resources ul {
   padding: 0;
   margin: 0;
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 #resources li {
   border-bottom: 1px solid #ccc;
   display: block;
 }
 #resources a {
-    display: block;
-    color: #3c2b67;
-    text-decoration: none;
-    padding: 0.5rem;
-  }
-  #resources a:hover {
-    color: #6a7a9f;
-  }
-  /* section, */
-  /* #team li { */
-    /* --width: 16; */
-    /* --initialbasis: calc(var(--width, 0) / var(--colunms, 16) * 100%); */
-    /* --gap: calc((var(--colunms, 16) - var(--width, 0)) * 1%); */
-    /* flex-basis: calc(var(--initialbasis) - var(--gap)); */
-  /* } */
+  display: block;
+  color: #3c2b67;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+#resources a:hover {
+  color: #6a7a9f;
+}
   /* Nav styles */
-  /* */
-  .sr-only {
-    position: absolute;
+.sr-only {
+  position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -259,68 +251,64 @@ small, .text_small {
 }
 /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
 .menu-toggle {
-    color: #333;
-    margin-right: 1rem;
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color: #C85028;
-  }
-  
-  /*
-  Mobile first - this is the mobile menu, positioned offscreen to start 
-  */
-  
-  /* set the menu in a fixed position occupying 100% of the screen height, so you can't scroll away from it. Have nav scrollbars appear when needed. Any long nav names should be fully visible. */
-  .main-menu {
-    position: fixed;
-    display: none;
-    left: -200px;
-    top: 0;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: visible;
-    transition: left 0.3s ease;
-    z-index: 999;
-  }
-  /* turn off bullets, set width and background color of flyout menu. Width here and "left" property on main-menu should be the same absolute number */
-  .main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding-top: 2.5em;
-    min-height: 100%;
-    width: 200px;
-    background-color: #1a1a1a;
-  }
-  
-  /* Make links block to make them fully clickable on mobile. Remember this is finger navigation, so include plenty of clickable area. All links get a bottom border */
-  .main-menu a {
-    display: block;
-    padding: .75rem;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #383838;
-  }
-  /* first link gets a border on top */
-  .main-menu li:first-child a {
-    border-top: 1px solid #383838;
-  }
-  
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: #333;
-    text-decoration: underline;
-  }
-  /* "close" button is positioned in the upper right corner. Button is the X / fa-close button from FontAwesome. If you want it bigger, do it here */
-  .main-menu .menu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /*
-  THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px
+  color: #333;
+  margin-right: 1rem;
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #C85028;
+}
+
+/*
+Mobile first - this is the mobile menu, positioned offscreen to start 
+*/
+
+/* set the menu in a fixed position occupying 100% of the screen height, so you can't scroll away from it. Have nav scrollbars appear when needed. Any long nav names should be fully visible. */
+.main-menu {
+  position: fixed;
+  display: none;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: visible;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+/* turn off bullets, set width and background color of flyout menu. Width here and "left" property on main-menu should be the same absolute number */
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 2.5em;
+  min-height: 100%;
+  width: 200px;
+  background-color: #1a1a1a;
+}
+/* Make links block to make them fully clickable on mobile. Remember this is finger navigation, so include plenty of clickable area. All links get a bottom border */
+.main-menu a {
+  display: block;
+  padding: .75rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+/* first link gets a border on top */
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+/* "close" button is positioned in the upper right corner. Button is the X / fa-close button from FontAwesome. If you want it bigger, do it here */
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*
+THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px
 How is it targeted? Follow the HTML, line 18  <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
 Note the href targets the main menu (both class and ID)
 */
@@ -329,7 +317,6 @@ Note the href targets the main menu (both class and ID)
   left: 0;
   outline: none;
 }
-
 /* when main menu is targeted (button is clicked), bring the X to the top so it can be clicked */
 .main-menu:target .menu-close {
   z-index: 1001;
@@ -337,25 +324,24 @@ Note the href targets the main menu (both class and ID)
   
 .main-menu:target ul {
   position: relative;
-    z-index: 1000;
-  }
-  
-  /* 
-  We could us `.main-menu:target:after`, but
-  it wouldn't be clickable.
-  The backdrop is the link on line 42, with no content and hidden. Here we display it block, make it fixed, display it behind the menu (note Z values) and give it a color. It occupies any remaining space on the screen after the menu is displayed */
-  
-  .main-menu:target + .backdrop {
-    position: fixed;
-    display: block;  
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    background: rgba(0,0,0,.85);
-    cursor: default;
-  }
+  z-index: 1000;
+}
+/* 
+We could us `.main-menu:target:after`, but
+it wouldn't be clickable.
+The backdrop is the link on line 42, with no content and hidden. Here we display it block, make it fixed, display it behind the menu (note Z values) and give it a color. It occupies any remaining space on the screen after the menu is displayed */
+
+.main-menu:target + .backdrop {
+  position: fixed;
+  display: block;  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
 .myButton {
   color: rgb(255, 255, 255); 
   font-size: 16px; 
@@ -376,165 +362,163 @@ Note the href targets the main menu (both class and ID)
 .myButton:active {
   background: #144E75; 
 }
-  
-  /*
-  Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
-  */
-  @media (min-width: 740px) {
-    main {
+/*
+Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
+*/
+@media (min-width: 740px) {
+  main {
 /*       --colunms: 11; */
-    margin: 20px 10%;
-    }
-    #first {
+  margin: 20px 10%;
+  }
+  #first {
 /*       --width: 5; */
 /*       order: 1; */
-    }
-    #main {
+  }
+  #main {
 /*       --width: 6; */
 /*       order: 2; */
-    }
-    #team {
+  }
+  #team {
 /*     --width: 11; */
 /*     order: 3; */
-    }
-    #team ul {
+  }
+  #team ul {
 /*       --colunm: 5; */
-    }
-    #resources {
+  }
+  #resources {
 /*       --width: 11; */
 /*       order: 4; */
-    }
-    article div {
-      margin: 20px 5% 10px;
-      padding: 3px 0  30px 0;
-    }
-    .floatleft {
-      float: left;
-      margin: 0 1rem 1rem 0;
-    }
-    .floatright {
-      float: right;
-      margin: 0 0 1rem 1rem;
-    }
-    #inside article {
-      --width: 7;
-    }
-    #inside aside {
-      --width: 4;
-    }
-    /* header and nav borders rearranged for desktop */
-    header, main {
-        border: none;
-        margin: 0;
-    }
-    nav { 
-      padding: 0.3rem 0;
-    }
-    nav ul {
-      text-align: center;
-    }
-    /* display the li's horizontally */
-    nav li {
-      display: inline-block;
-    }
-    /* fa-bars and fa-close not needed on desktop so hide them */
-    .menu-toggle,
-    .main-menu .menu-close {
-      display: none;
-    }
-    
-    /* Undo positioning of off-canvas menu - remember this is hidden by default. Default position property is static, i.e. normal flow */
-    .main-menu {
-      position: static;
-      display: block;
-    }
-    /* Undo off-canvas styling */
-    .main-menu ul {      
-      padding: 0;
-      height: auto;
-      width: auto;
-      background: none;
-      overflow: hidden;
-      text-align: center;
-    }
-    /* display the li's horizontally */
-    .main-menu li {
-      display: inline-block;
-    }
-    /* undo off canvas style */
-    .main-menu li:first-child a {
-        border-top: none;
-    }
-    /* desktop assumes a pointer display */
-    .main-menu a {
-      color: whitesmoke;
-      border-bottom: none;
-      display: inline;
-    }
-    /* Remove background from off-canvas styling, change colors */
-    .main-menu a:hover,
-    .main-menu a:focus {
-      background: none; 
-      color: #7E64BE;
-      text-decoration: none;
-    }
   }
-  @media (min-width: 950px) {
-    --type-scale: 1.2;
-    main {
+  article div {
+    margin: 20px 5% 10px;
+    padding: 3px 0  30px 0;
+  }
+  .floatleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+  .floatright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+  #inside article {
+    --width: 7;
+  }
+  #inside aside {
+    --width: 4;
+  }
+  /* header and nav borders rearranged for desktop */
+  header, main {
+    border: none;
+    margin: 0;
+  }
+  nav { 
+    padding: 0.3rem 0;
+  }
+  nav ul {
+    text-align: center;
+  }
+  /* display the li's horizontally */
+  nav li {
+    display: inline-block;
+  }
+  /* fa-bars and fa-close not needed on desktop so hide them */
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  /* Undo positioning of off-canvas menu - remember this is hidden by default. Default position property is static, i.e. normal flow */
+  .main-menu {
+    position: static;
+    display: block;
+  }
+  /* Undo off-canvas styling */
+  .main-menu ul {      
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* display the li's horizontally */
+  .main-menu li {
+    display: inline-block;
+  }
+  /* undo off canvas style */
+  .main-menu li:first-child a {
+    border-top: none;
+  }
+  /* desktop assumes a pointer display */
+  .main-menu a {
+    color: whitesmoke;
+    border-bottom: none;
+    display: inline;
+  }
+  /* Remove background from off-canvas styling, change colors */
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; 
+    color: #7E64BE;
+    text-decoration: none;
+  }
+}
+@media (min-width: 950px) {
+  --type-scale: 1.2;
+  main {
 /*       --colunms: 14; */
-    }
-    #team {
+  }
+  #team {
 /*       --width: 14; */
 /*       order: 4; */
-    }
-    #resources {
+  }
+  #resources {
 /*       --width: 3; */
 /*       order: 3; */
-    }
-    #inside  article {
-/*       --width: 10; */
-    }
-    #inside  aside {
-/*       --width: 4; */
-    }
-    #inside #table article {
-/*       --width: 14; */
-    }
-    #inside #table aside {
-/*       --width: 14; */
-    }
-    article div {
-      margin: 20px 20% 10px;
-      padding: 3px 0  30px 0;
-    }
   }
-  @media (min-width: 1200px) {
-    --type-scale: 1.25;
-    main {
+  #inside  article {
+/*       --width: 10; */
+  }
+  #inside  aside {
+/*       --width: 4; */
+  }
+  #inside #table article {
+/*       --width: 14; */
+  }
+  #inside #table aside {
+/*       --width: 14; */
+  }
+  article div {
+    margin: 20px 20% 10px;
+    padding: 3px 0  30px 0;
+  }
+}
+@media (min-width: 1200px) {
+  --type-scale: 1.25;
+  main {
 /*       --colunms: 16; */
-    }
-    #team ul {
+  }
+  #team ul {
 /*       --colunms: 1; */
-    }
-    #team {
+  }
+  #team {
 /*       --width: 2; */
 /*       order: 3; */
-    }
-    #team img {
-  display: inline;
-    max-width: 200px;
   }
-    #resources {
+  #team img {
+    display: inline;
+    max-width: 200px;
+}
+  #resources {
 /*       --width: 3; */
 /*       order: 4;  */
-    }
-    #inside aside,
-    #inside #table aside {
-/*       --width: 4; */
-    }
-    article div {
-      margin: 20px 24% 10px;
-      padding: 3px 0  30px 0;
-    }
   }
+  #inside aside,
+  #inside #table aside {
+/*       --width: 4; */
+  }
+  article div {
+    margin: 20px 24% 10px;
+    padding: 3px 0  30px 0;
+  }
+}
