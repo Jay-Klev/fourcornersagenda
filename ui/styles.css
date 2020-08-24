@@ -17,7 +17,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: greenyellow;
+  background-color: whitesmoke;
   background-image: url("photos/bg-whiteMarble.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,7 +32,6 @@ header, h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
 }
 header {
-  /* border-bottom: 4px solid #9ea99e; */
   font-weight: 400;
   background-image: url("photos/totem-on-shore-banner2.png");
   background-repeat: no-repeat;
@@ -69,7 +68,6 @@ nav a {
   text-decoration: none;
 }
 main {
-  border-top: 2px solid #dddddd;
   margin-top: 0.5rem;
   text-align: center;
   display: flex;
@@ -89,7 +87,7 @@ article {
 }
 article div {
   background-color: white;
-  box-shadow: 0 0 8px 8px #17aa01 inset;
+  box-shadow: 0 0 8px 8px #e7edf0 inset;
   padding: 2px 0  25px 0;
 }
 img, .floatleft, .floatright {
