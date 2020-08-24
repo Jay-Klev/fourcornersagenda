@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/b04deccf84.js" crossorigin="anonymous"></script>
+    <base href="/" />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <title>Four Corners Agenda</title>
+  </head>
+  <body>
+    <header class="header" id="myHeader">
+      <div class="row">
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+				<span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        <div id="logo-image">
+          <a href="#" target="logo-prototype"></a>
+        </div>
+          <div class="logo">
+          <h1><i class="fasfa-paint-brush"></i>Four Corners Agenda</h1>
+        </div>
+      </div>
+      <!-- will activate after links are extablished -->
+
+      <nav id="main-menu" class="main-menu" aira-label="main menu">
+      <a 	href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+				<span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+      </a>
+        <ul>
+          <li class="myButton"><a href="#">Home</a>
+          </li>
+          <li class="myButton"><a href="#">Product</a>
+          </li>
+          <li class="myButton"><a href="./html/team.html" target="_self">Team</a>
+          </li>
+          <li class="myButton"><a href="#">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+    </header>
+    
+    <main>
+      <section id="product">
+        <article>
+          <img src="photos/agenda-cover.png" alt="logo-fourcorners">
+          <div>
+            <h2>Four Corners Wellness Agenda</h2>
+            <p>Coming Soon!! 
+              <!-- <cite>said by so, and so.</cite> -->
+            </p>
+            <!-- <p><a href="#" target="_blank">Visit the... 
+              <cite>same or diff</cite>
+              <i class="fasfa-paint-brush"></i></a>
+            </p> -->
+          </div>
+        </article>
+      </section>
+        <section id="resources">
+          <h1>Resources <small>(links)</small></h1>
+          <ul>
+            <li><a 
+              href="#"
+              target="_blank">Links.</a></li>
+            <li><a 
+              href="#"
+              target="_blank">Endless Links..</a></li>
+          </ul>
+        </section>
+    </main>
+  </body>
+</html>
