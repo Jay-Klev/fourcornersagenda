@@ -349,7 +349,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   background: rgba(0,0,0,.85);
   cursor: default;
 }
-/* .myButton {
+.myButton {
   color: rgb(255, 255, 255); 
   font-size: 16px; 
   line-height: 16px; 
@@ -362,7 +362,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   text-transform: none; 
   background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
   display: inline-block;
-} */
+}
 nav .myButton.homeButton {
   color: rgb(0, 0, 0); 
   font-size: 16px; 
