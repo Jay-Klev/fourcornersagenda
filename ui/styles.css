@@ -379,7 +379,7 @@ nav li.myButton.homeButton {
 
 }
 nav li.myButton.productButton {
-  color: rgb(0, 0, 0); 
+  color: black; 
   font-size: 16px; 
   line-height: 16px; 
   padding: 5px; 
