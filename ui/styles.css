@@ -364,7 +364,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   display: inline-block;
 } */
 .myButton .homeButton {
-  color: black; 
+  color: rgb(0, 0, 0); 
   font-size: 16px; 
   line-height: 16px; 
   padding: 5px; 
@@ -379,7 +379,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
 
 }
 .myButton .productButton {
-  color: black; 
+  color: rgb(0, 0, 0); 
   font-size: 16px; 
   line-height: 16px; 
   padding: 5px; 
@@ -393,7 +393,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   display: inline-block;
 }
 .myButton .teamButton {
-  color: black; 
+  color: rgb(0, 0, 0); 
   font-size: 16px; 
   line-height: 16px; 
   padding: 5px; 
@@ -407,7 +407,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   display: inline-block;
 }
 .myButton .contactButton {
-  color: white; 
+  color: rgb(255, 255, 255); 
   font-size: 16px; 
   line-height: 16px; 
   padding: 5px; 
