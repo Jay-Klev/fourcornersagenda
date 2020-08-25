@@ -103,7 +103,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #7E64BE;
+  /* color: #7E64BE; */
 }
 
 a[href^=http]:hover {
@@ -532,7 +532,7 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   .main-menu a:hover,
   .main-menu a:focus {
     background: none; 
-    color: #7E64BE;
+    /* color: #7E64BE; */
     text-decoration: none;
   }
 }
