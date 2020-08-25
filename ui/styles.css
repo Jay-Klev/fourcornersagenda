@@ -212,6 +212,9 @@ small, .text_small {
   top: -40px;
   left: 20px;
 }
+#product img {
+  width: 250px;
+}
 /* resources styling */
 #resources {
   background-color: #f1f1f1;
