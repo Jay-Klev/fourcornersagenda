@@ -98,7 +98,7 @@ img, .floatleft, .floatright {
   max-width: 100%;
 }
 a {
-  /* color: #C85028; */
+  color: black;
   font-weight: bold;
   text-decoration: none;
 }
