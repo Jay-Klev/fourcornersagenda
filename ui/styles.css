@@ -524,7 +524,7 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   }
   /* desktop assumes a pointer display */
   .main-menu a {
-    color: whitesmoke;
+    /* color: whitesmoke; */
     border-bottom: none;
     display: inline;
   }
