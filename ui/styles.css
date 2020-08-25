@@ -363,7 +363,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
   display: inline-block;
 } */
-nav li .myButton .homeButton {
+.myButton .homeButton {
   color: black; 
   font-size: 16px; 
   line-height: 16px; 
@@ -378,7 +378,7 @@ nav li .myButton .homeButton {
   display: inline-block;
 
 }
-nav li .myButton .productButton {
+.myButton .productButton {
   color: black; 
   font-size: 16px; 
   line-height: 16px; 
@@ -392,7 +392,7 @@ nav li .myButton .productButton {
   background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(253, 97, 97) 50%, rgb(170, 3, 3) 100%);
   display: inline-block;
 }
-nav li .myButton .teamButton {
+.myButton .teamButton {
   color: black; 
   font-size: 16px; 
   line-height: 16px; 
@@ -406,7 +406,7 @@ nav li .myButton .teamButton {
   background-image: linear-gradient(to right, rgb(255, 251, 0) 0%, rgb(255, 252, 82) 50%, rgb(172, 169, 1) 100%);
   display: inline-block;
 }
-nav li .myButton .contactButton {
+.myButton .contactButton {
   color: white; 
   font-size: 16px; 
   line-height: 16px; 
