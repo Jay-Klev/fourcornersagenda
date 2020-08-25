@@ -162,7 +162,7 @@ small, .text_small {
 }
 #team img {
   display: inline;
-  border: 8px double #c3c7c9; 
+  border: 6px double #c3c7c9; 
 /*   border-width: thick;
   border-style: outset;
   border-color: red; */
