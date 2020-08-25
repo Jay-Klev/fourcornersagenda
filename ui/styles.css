@@ -349,8 +349,8 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   background: rgba(0,0,0,.85);
   cursor: default;
 }
-.myButton {
-  /* color: rgb(255, 255, 255);  */
+/* .myButton {
+  color: rgb(255, 255, 255); 
   font-size: 16px; 
   line-height: 16px; 
   padding: 5px; 
@@ -360,24 +360,65 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   font-style: normal; 
   font-variant: normal; 
   text-transform: none; 
-  /* background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);  */
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
   display: inline-block;
-}
+} */
 nav li .myButton .homeButton {
-  color: black;
+  color: black; 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 5px; 
+  border-radius: 10px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
   background-image: linear-gradient(to right, rgb(146, 146, 146) 0%, rgb(201, 201, 201) 50%, rgb(104, 104, 104) 100%); 
+  display: inline-block;
+
 }
 nav li .myButton .productButton {
-  color: black;
+  color: black; 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 5px; 
+  border-radius: 10px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
   background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(253, 97, 97) 50%, rgb(170, 3, 3) 100%);
+  display: inline-block;
 }
 nav li .myButton .teamButton {
-  color: black;
+  color: black; 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 5px; 
+  border-radius: 10px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
   background-image: linear-gradient(to right, rgb(255, 251, 0) 0%, rgb(255, 252, 82) 50%, rgb(172, 169, 1) 100%);
+  display: inline-block;
 }
 nav li .myButton .contactButton {
-  color: rgb(255, 255, 255);
+  color: white; 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 5px; 
+  border-radius: 10px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
   background-image: linear-gradient(to right, rgb(59, 59, 59) 0%, rgb(78, 78, 78) 50%, rgb(0, 0, 0) 100%);
+  display: inline-block;
 }
 .myButton:hover {
   background: #1C6EA4; 
