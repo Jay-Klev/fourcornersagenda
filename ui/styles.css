@@ -162,6 +162,11 @@ small, .text_small {
 }
 #team img {
   display: inline;
+  border: 8px outset #e7edf0; 
+/*   border-width: thick;
+  border-style: outset;
+  border-color: red; */
+  border-radius: 50%;
   }
 #team figure {
   margin: 0;
