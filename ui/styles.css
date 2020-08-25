@@ -102,6 +102,9 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+a .contactButton {
+  color: white;
+}
 a:hover {
   /* color: #7E64BE; */
 }
