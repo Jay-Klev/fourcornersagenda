@@ -295,7 +295,7 @@ Mobile first - this is the mobile menu, positioned offscreen to start
 .main-menu a {
   display: block;
   padding: .75rem;
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
   border-bottom: 1px solid #383838;
 }
