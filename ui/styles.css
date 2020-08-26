@@ -161,8 +161,9 @@ small, .text_small {
   hyphens: auto;
   margin: 5px 5% 5px;
 }
-#first #fourCornersAgenda.fourCornersAgenda {
+#first div#fourCornersAgenda.fourCornersAgenda {
   background-image: url(photos/logo-fourcorners.png);
+  background-size: cover;
   display: inline;
   border: 6px double #c3c7c9; 
 /*   border-width: thick;
@@ -177,8 +178,8 @@ small, .text_small {
 #team img {
   display: inline;
   border: 6px double #c3c7c9; 
-  width: 500px;
-  height: 500px;
+  /* width: 500px; */
+  /* height: 500px; */
 /*   border-width: thick;
   border-style: outset;
   border-color: red; */
