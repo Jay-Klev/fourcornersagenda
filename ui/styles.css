@@ -161,7 +161,7 @@ small, .text_small {
   hyphens: auto;
   margin: 5px 5% 5px;
 }
-#first img {
+#first #fourCornersAgenda.fourCornersAgenda {
   background-image: url(photos/logo-fourcorners.png);
 }
 /* team styling */
