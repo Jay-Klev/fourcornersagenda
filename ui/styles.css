@@ -163,6 +163,12 @@ small, .text_small {
 }
 #first #fourCornersAgenda.fourCornersAgenda {
   background-image: url(photos/logo-fourcorners.png);
+  display: inline;
+  border: 6px double #c3c7c9; 
+/*   border-width: thick;
+  border-style: outset;
+  border-color: red; */
+  /* border-radius: 50%; */
 }
 /* team styling */
 #team {
