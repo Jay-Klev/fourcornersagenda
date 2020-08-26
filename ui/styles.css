@@ -161,7 +161,7 @@ small, .text_small {
   hyphens: auto;
   margin: 5px 5% 5px;
 }
-div #fourCornersAgenda.fourCornersAgenda {
+span#fourCornersAgenda.fourCornersAgenda {
   display:block;
   position:absolute;
   background: url(photos/logo-fourcorners.png);
