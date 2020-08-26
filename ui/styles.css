@@ -162,12 +162,16 @@ small, .text_small {
   margin: 5px 5% 5px;
 }
 #first div#fourCornersAgenda.fourCornersAgenda {
+  display:block;
+  position:absolute;
   background-image: url(photos/logo-fourcorners.png);
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  display: inline-block;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  width:500px;
+  height:500px;
+  float:right;
+  bottom:0;
+  right:0;
   border: 6px double #c3c7c9; 
   padding: 5px;
 /*   border-width: thick;
