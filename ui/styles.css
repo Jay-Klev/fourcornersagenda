@@ -164,7 +164,7 @@ small, .text_small {
 #first div#fourCornersAgenda.fourCornersAgenda {
   display:block;
   position:absolute;
-  background-image: url("photos/logo-fourcorners.png");
+  background: url(photos/logo-fourcorners.png);
   background-repeat:no-repeat;
   background-size: 100% 100%;
   width:500px;
