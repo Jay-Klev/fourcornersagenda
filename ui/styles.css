@@ -164,7 +164,10 @@ small, .text_small {
 #first div#fourCornersAgenda.fourCornersAgenda {
   background-image: url(photos/logo-fourcorners.png);
   background-size: cover;
-  display: inline;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  display: inline-block;
   border: 6px double #c3c7c9; 
 /*   border-width: thick;
   border-style: outset;
