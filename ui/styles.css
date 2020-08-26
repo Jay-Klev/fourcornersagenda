@@ -608,7 +608,7 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   #inside #table aside {
 /*       --width: 4; */
   }
-  article div {
+  article {
     margin: 20px 24% 10px;
     padding: 3px 0  30px 0;
   }
