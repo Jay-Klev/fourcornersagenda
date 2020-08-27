@@ -293,7 +293,7 @@ Mobile first - this is the mobile menu, positioned offscreen to start
   margin: 0;
   padding-top: 2.5em;
   min-height: 237px;
-  width: 176px;
+  width: 177px;
   background-color: #525252;
 }
 /* Make links block to make them fully clickable on mobile. Remember this is finger navigation, so include plenty of clickable area. All links get a bottom border */
