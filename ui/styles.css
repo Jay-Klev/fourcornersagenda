@@ -292,7 +292,7 @@ Mobile first - this is the mobile menu, positioned offscreen to start
   list-style: none;
   margin: 0;
   padding-top: 2.5em;
-  min-height: 239px;
+  min-height: 237px;
   width: 176px;
   background-color: #525252;
 }
