@@ -412,7 +412,7 @@ header h1 {
   margin: 20px 10%;
   }
   #product .logoFourCornersAgenda{
-    display: none;
+    display: block;
   }
   #first {
 /*       --width: 5; */
