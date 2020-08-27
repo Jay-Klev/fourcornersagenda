@@ -370,46 +370,18 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
 }
 nav li.myButton.homeButton {
   color: rgb(0, 0, 0); 
-  /* font-size: 15px; 
-  line-height: 16px; 
-  padding: 5px; 
-  border-radius: 10px; 
-  font-weight: normal; 
-  text-decoration: none; 
-  font-style: normal; 
-  font-variant: normal; 
-  text-transform: none;  */
   background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%); 
-  display: inline-block;
 
 }
 nav li.myButton.productButton {
   color: black; 
-  font-size: 15px; 
-  line-height: 16px; 
-  padding: 5px; 
-  border-radius: 10px; 
-  font-weight: normal; 
-  text-decoration: none; 
-  font-style: normal; 
-  font-variant: normal; 
-  text-transform: none; 
+  font-size: 15px;  
   background-image: linear-gradient(to right, rgb(255, 25, 25) 0%, rgb(255, 126, 126) 50%, rgb(175, 13, 13) 100%);
-  display: inline-block;
 }
 nav li.myButton.teamButton {
   color: rgb(0, 0, 0); 
   font-size: 15px; 
-  line-height: 16px; 
-  padding: 5px; 
-  border-radius: 10px; 
-  font-weight: normal; 
-  text-decoration: none; 
-  font-style: normal; 
-  font-variant: normal; 
-  text-transform: none; 
   background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(243, 255, 134) 50%, rgb(171, 173, 0) 100%);
-  display: inline-block;
 }
 nav li.myButton.contactButton {
   color: rgb(255, 255, 255); 
