@@ -292,7 +292,7 @@ Mobile first - this is the mobile menu, positioned offscreen to start
   list-style: none;
   margin: 0;
   padding-top: 2.5em;
-  min-height: 237px;
+  min-height: auto;
   width: 177px;
   background-color: #525252;
 }
@@ -370,7 +370,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
 }
 nav li.myButton.homeButton {
   color: rgb(0, 0, 0); 
-  font-size: 15px; 
+  /* font-size: 15px; 
   line-height: 16px; 
   padding: 5px; 
   border-radius: 10px; 
@@ -378,7 +378,7 @@ nav li.myButton.homeButton {
   text-decoration: none; 
   font-style: normal; 
   font-variant: normal; 
-  text-transform: none; 
+  text-transform: none;  */
   background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%); 
   display: inline-block;
 
