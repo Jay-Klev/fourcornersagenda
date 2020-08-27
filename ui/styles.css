@@ -411,7 +411,7 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
 /*       --colunms: 11; */
     margin: 20px 10%;
   }
-  #product img#logoFourCornersAgenda{
+  img#logoFourCornersAgenda{
     display: none;
   }
   #first {
