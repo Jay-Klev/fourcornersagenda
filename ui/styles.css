@@ -399,20 +399,20 @@ nav li.myButton.contactButton {
 Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
 */
 @media (min-width: 740px) {
-header h1 {
-  display: block;
-  margin: 0;
-  font-weight: 400;
-  color: #e7edf0;
-  text-shadow: 2px 2px 5px black;
-  padding: 80px 20px 0;
+  header h1 {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    color: #e7edf0;
+    text-shadow: 2px 2px 5px black;
+    padding: 80px 20px 0;
 }
   main {
 /*       --colunms: 11; */
-  margin: 20px 10%;
+    margin: 20px 10%;
   }
   #product img.logoFourCornersAgenda{
-    display: none;
+    visibility: collapse;
   }
   #first {
 /*       --width: 5; */
