@@ -54,6 +54,7 @@ header .row {
   flex-flow: row nowrap;
 }
 header h1 {
+  display: none;
   margin: 0;
   font-weight: 400;
   color: #e7edf0;
@@ -355,6 +356,7 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   cursor: default;
 }
 .myButton {
+  display: inline-block;
   color: rgb(255, 255, 255); 
   font-size: 16px; 
   line-height: 16px; 
@@ -366,12 +368,11 @@ The backdrop is the link on line 42, with no content and hidden. Here we display
   font-variant: normal; 
   text-transform: none; 
   background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
-  display: inline-block;
 }
 nav li.myButton.homeButton {
   color: rgb(0, 0, 0); 
+  font-size: 15px; 
   background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%); 
-
 }
 nav li.myButton.productButton {
   color: black; 
@@ -385,17 +386,8 @@ nav li.myButton.teamButton {
 }
 nav li.myButton.contactButton {
   color: rgb(255, 255, 255); 
-  font-size: 15px; 
-  line-height: 16px; 
-  padding: 5px; 
-  border-radius: 10px; 
-  font-weight: normal; 
-  text-decoration: none; 
-  font-style: normal; 
-  font-variant: normal; 
-  text-transform: none; 
+  font-size: 15px;  
   background-image: linear-gradient(to right, rgb(27, 27, 27) 0%, rgb(65, 65, 65) 50%, rgb(0, 0, 0) 100%);
-  display: inline-block;
 }
 .myButton:hover {
   background: #1C6EA4; 
@@ -407,9 +399,20 @@ nav li.myButton.contactButton {
 Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
 */
 @media (min-width: 740px) {
+header h1 {
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  color: #e7edf0;
+  text-shadow: 2px 2px 5px black;
+  padding: 80px 20px 0;
+}
   main {
 /*       --colunms: 11; */
   margin: 20px 10%;
+  }
+  #product .logoFourCornersAgenda{
+    display: none;
   }
   #first {
 /*       --width: 5; */
