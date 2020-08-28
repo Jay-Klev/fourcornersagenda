@@ -125,6 +125,7 @@ a[href^=http]:hover:after {
   line-height: 1;
 }
 p {
+  margin: 5px 5% 5px;
   margin-bottom: 1.15rem;
   hyphens: auto;
 }
@@ -156,11 +157,6 @@ section,
 }
 small, .text_small { 
   font-size: calc(var(--base-size) / var(--base-scale));
-}
-#first p {
-  margin-bottom: 1.15rem;
-  hyphens: auto;
-  margin: 5px 5% 5px;
 }
 /* team styling */
 #team {
