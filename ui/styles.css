@@ -79,7 +79,7 @@ main {
   --colunms: 16;
 }
 main img#logoFourCornersAgenda {
-  max-width: 500px;
+  width: 500px;
   margin: auto;
 }
 section {
