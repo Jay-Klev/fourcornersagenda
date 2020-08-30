@@ -78,6 +78,10 @@ main {
   justify-content: space-between;
   --colunms: 16;
 }
+main img#logoFourCornersAgenda {
+  max-width: 500px;
+  margin: auto;
+}
 section {
 
 }
