@@ -191,19 +191,16 @@ small, .text_small {
   margin: 0;
 }
 #team li {
-  flex: 0 0 200px;
-  margin: 0 20px;
-}
-#team li {
   --width: 1;
   --gap-constant: 3%;
+  flex: 0 0 310px;
 }
 #team li .quote {
   flex: 10%;
   border-radius: 10px;
   position: relative;
   padding: 5px;
-  left: 10px;
+  left: 20px;
   background-color:#660022;
   color: whitesmoke;
   float: left;
@@ -429,12 +426,6 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   #team ul {
 /*       --colunm: 5; */
   }
-#team li {
-  flex: 0 0 310px;
-}
-#team li .quote {
-  left: 20px; 
-}
   #resources {
 /*       --width: 11; */
 /*       order: 4; */
