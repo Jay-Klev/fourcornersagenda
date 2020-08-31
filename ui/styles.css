@@ -218,7 +218,11 @@ small, .text_small {
 #product img {
   width: 400px;
 }
-
+#product div.buyButtonAgenda {
+  display: block;
+  margin: 1rem auto 0 auto;
+  max-width: 100%;
+}
 
 /* slideshow */
 .container {
