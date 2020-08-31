@@ -193,7 +193,7 @@ small, .text_small {
 #team li {
   --width: 1;
   --gap-constant: 3%;
-  flex: 0 0 310px;
+  flex: 0 0 400px;
 }
 #team li .quote {
   flex: 10%;
