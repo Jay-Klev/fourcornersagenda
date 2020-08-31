@@ -225,7 +225,7 @@ small, .text_small {
 }
 
 /* slideshow */
-.container {
+#product div.container {
   box-sizing: border-box;
   position: relative;
 }
