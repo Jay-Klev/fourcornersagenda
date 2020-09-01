@@ -538,7 +538,7 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   }
 #product div.buyButtonFullAgenda {
   display: block;
-  margin: 1rem 20% 0;
+  margin: 1rem 20%;
   max-width: 100%;
 }
   article div {
