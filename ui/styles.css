@@ -493,9 +493,6 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
 /*       --width: 6; */
 /*       order: 2; */
   }
-  #product div.buyButtonAgenda {
-    margin: 1rem 20% 0;
-  }
   #team {
 /*     --width: 11; */
 /*     order: 3; */
