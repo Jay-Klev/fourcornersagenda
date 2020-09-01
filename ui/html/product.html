@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/b04deccf84.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"> /* shopify buy button function*/
+    <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -32,21 +32,17 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '5579022172313',
-        node: document.getElementById('product-component-1598912989292'),
+        node: document.getElementById('product-component-1598946750396'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
           "margin-bottom": "50px"
-        },
-        "text-align": "left"
-      },
-      "title": {
-        "font-size": "26px"
+        }
       },
       "button": {
         "font-family": "Arial, sans-serif",
@@ -62,7 +58,7 @@
         ":focus": {
           "background-color": "#44e661"
         },
-        "border-radius": "14px",
+        "border-radius": "19px",
         "padding-left": "21px",
         "padding-right": "21px"
       },
@@ -70,25 +66,9 @@
         "font-size": "17px",
         "padding-top": "16.5px",
         "padding-bottom": "16.5px"
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15.299999999999999px"
-      },
-      "unitPrice": {
-        "font-size": "15.299999999999999px"
       }
     },
     "buttonDestination": "checkout",
-    "layout": "horizontal",
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "description": true
-    },
-    "width": "100%",
     "text": {
       "button": "Buy now"
     }
@@ -131,7 +111,7 @@
         ":focus": {
           "background-color": "#44e661"
         },
-        "border-radius": "14px",
+        "border-radius": "19px",
         "padding-left": "21px",
         "padding-right": "21px"
       },
@@ -161,7 +141,7 @@
         ":focus": {
           "background-color": "#44e661"
         },
-        "border-radius": "14px"
+        "border-radius": "19px"
       }
     },
     "text": {
@@ -243,8 +223,8 @@
     <main>
       <section id="product">
         <article>
-          <div id='product-component-1598912989292' class="buyButtonAgenda"></div> <!--buy button-->
-          <!-- <img src="../photos/agendaCoverFinal.png" alt="logo-fourcorners"> -->
+          <h1>Agenda</h1>
+          <div id='product-component-1598946750396' class="buyButtonAgenda"></div>          <!-- <img src="../photos/agendaCoverFinal.png" alt="logo-fourcorners"> -->
             <h2>Four Corners Wellness Agenda</h2>
             <p>We know that life can get stressful and busy, your agenda has been 
               designed with that in mind! 
