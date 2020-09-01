@@ -220,10 +220,8 @@ small, .text_small {
 }
 #product div.buyButtonAgenda {
   display: block;
-  margin: 1rem 10% 0;
-  padding: auto;
+  margin: 0 auto;
   max-width: 100%;
-  justify-self: space-around;
 }
 #product h1 {
   color: black; 
