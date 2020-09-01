@@ -196,8 +196,8 @@ small, .text_small {
   font-size: calc(var(--base-size) / var(--base-scale));
 }
 /* team styling */
-#team h1 {
-    background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%);
+#team {
+
 }
 #team img {
   display: inline;
