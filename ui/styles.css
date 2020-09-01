@@ -222,6 +222,7 @@ small, .text_small {
   display: block;
   margin: 1rem 10% 0;
   max-width: 100%;
+  justify-self: center;
 }
 #product h1 {
   color: black; 
