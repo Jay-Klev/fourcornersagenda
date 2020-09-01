@@ -223,6 +223,11 @@ small, .text_small {
   margin: 1rem 10% 0;
   max-width: 100%;
 }
+#product h1 {
+  color: black; 
+  font-size: 30px;  
+  background-image: linear-gradient(to right, rgb(255, 25, 25) 0%, rgb(255, 126, 126) 50%, rgb(175, 13, 13) 100%);
+}
 
 /* slideshow */
 #product div.container {
