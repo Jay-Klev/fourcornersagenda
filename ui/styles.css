@@ -221,6 +221,7 @@ small, .text_small {
 #product div.buyButtonAgenda {
   display: block;
   margin: 1rem 10% 0;
+  padding: auto;
   max-width: 100%;
   justify-self: space-around;
 }
