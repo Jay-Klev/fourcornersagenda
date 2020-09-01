@@ -510,6 +510,7 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   }
   p {
     font-size: 17px;
+    text-align: justify;
   }
   .floatleft {
     float: left;
