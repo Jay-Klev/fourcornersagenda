@@ -220,7 +220,7 @@ small, .text_small {
 }
 #product div.buyButtonAgenda {
   display: block;
-  margin: 1rem 10% 0;
+  margin: 1rem 20px 0;
   max-width: 100%;
 }
 
