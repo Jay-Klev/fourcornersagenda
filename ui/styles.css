@@ -87,7 +87,7 @@ main h1.home {
   font-size: 30px;  
   background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%); 
   border-radius: 30px;
-  max-width: 75%;
+  width: 75%;
   margin: 0 auto;
 }
 main h1.agenda {
@@ -95,7 +95,7 @@ main h1.agenda {
   font-size: 30px;  
   background-image: linear-gradient(to right, rgb(255, 25, 25) 0%, rgb(255, 126, 126) 50%, rgb(175, 13, 13) 100%);
   border-radius: 30px;
-  max-width: 75%;
+  width: 75%;
   margin: 0 auto;
 }
 main h1.team {
@@ -103,7 +103,7 @@ main h1.team {
   font-size: 30px;  
   background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(243, 255, 134) 50%, rgb(171, 173, 0) 100%);
   border-radius: 30px;
-  max-width: 75%;
+  width: 75%;
   margin: 0 auto;
 }
 main h1.resources {
@@ -111,7 +111,7 @@ main h1.resources {
   font-size: 30px;  
   background-image: linear-gradient(to right, rgb(27, 27, 27) 0%, rgb(65, 65, 65) 50%, rgb(0, 0, 0) 100%);
   border-radius: 30px;
-  max-width: 75%;
+  width: 75%;
   margin: 0 auto;
 }
 section {
