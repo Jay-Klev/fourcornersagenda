@@ -132,6 +132,7 @@ p {
   margin: 5px 5% 5px;
   margin-bottom: 1.15rem;
   hyphens: auto;
+  text-align: justify;
 }
 h1 {
   margin-top: 0;
@@ -510,7 +511,6 @@ Now set desktop behavior -- MQ value is set to where the navigation starts to wr
   }
   p {
     font-size: 17px;
-    text-align: justify;
   }
   .floatleft {
     float: left;
