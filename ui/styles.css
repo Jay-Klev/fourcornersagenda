@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: 'glegoo', 'poppins', "Open Sans", Arial, Helvetica, sans-serif;
   margin: 1rem;
 }
 header, h1, h2, h3, h4, h5, h6, p {
@@ -81,6 +81,30 @@ main {
 main img#logoFourCornersAgenda {
   width: 500px;
   margin: auto;
+}
+main h1.home {
+  color: black; 
+  font-size: 30px;  
+  background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%); 
+  border-radius: 30px;
+}
+main h1.agenda {
+  color: black; 
+  font-size: 30px;  
+  background-image: linear-gradient(to right, rgb(255, 25, 25) 0%, rgb(255, 126, 126) 50%, rgb(175, 13, 13) 100%);
+  border-radius: 30px;
+}
+main h1.team {
+  color: black; 
+  font-size: 30px;  
+  background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(243, 255, 134) 50%, rgb(171, 173, 0) 100%);
+  border-radius: 30px;
+}
+main h1.resources {
+  color: whitesmoke; 
+  font-size: 30px;  
+  background-image: linear-gradient(to right, rgb(27, 27, 27) 0%, rgb(65, 65, 65) 50%, rgb(0, 0, 0) 100%);
+  border-radius: 30px;
 }
 section {
 
@@ -164,8 +188,8 @@ small, .text_small {
   font-size: calc(var(--base-size) / var(--base-scale));
 }
 /* team styling */
-#team {
-  
+#team h1 {
+    background-image: linear-gradient(to right, rgb(211, 211, 211) 0%, rgb(255, 255, 255) 50%, rgb(177, 177, 177) 100%);
 }
 #team img {
   display: inline;
@@ -223,11 +247,6 @@ small, .text_small {
   display: block;
   margin: 1rem auto 0;
   max-width: 100%;
-}
-#product h1 {
-  color: black; 
-  font-size: 30px;  
-  background-image: linear-gradient(to right, rgb(255, 25, 25) 0%, rgb(255, 126, 126) 50%, rgb(175, 13, 13) 100%);
 }
 
 /* slideshow */
