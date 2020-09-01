@@ -32,7 +32,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '5579022172313',
-        node: document.getElementById('product-component-1598952366248'),
+        node: document.getElementById('product-component-1599001258100'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -72,16 +72,19 @@
         "padding-bottom": "16.5px"
       },
       "price": {
-        "font-size": "18px"
+        "font-size": "21px",
+        "color": "#ff0000"
       },
       "compareAt": {
-        "font-size": "15.299999999999999px"
+        "font-size": "17.849999999999998px",
+        "color": "#ff0000"
       },
       "unitPrice": {
-        "font-size": "15.299999999999999px"
+        "font-size": "17.849999999999998px",
+        "color": "#ff0000"
       },
       "description": {
-        "font-size": "17px"
+        "font-size": "16px"
       }
     },
     "buttonDestination": "checkout",
@@ -89,11 +92,13 @@
     "contents": {
       "img": false,
       "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true,
       "description": true
     },
     "width": "100%",
     "text": {
-      "button": "Buy now"
+      "button": "Launch Sale Buy Now."
     }
   },
   "productSet": {
@@ -247,7 +252,8 @@
       <!-- <img id="logoFourCornersAgenda" src="photos/logo-fourcorners.png" alt="four corners agenda"> -->
       <section id="product">
         <article>
-          <div id='product-component-1598952366248' class="buyButtonFullAgenda"></div>
+          <div id='product-component-1598952366248'></div>
+          <div id='product-component-1599001258100' class="buyButtonFullAgenda"></div>
           <!-- <div>
             <p>Four Corners Wellness Agenda was created by 7 Indigenous youth. We came together to create a 
               small business that would positively affect our communities by sharing 

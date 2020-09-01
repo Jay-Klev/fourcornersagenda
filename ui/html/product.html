@@ -32,17 +32,21 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '5579022172313',
-        node: document.getElementById('product-component-1598946750396'),
+        node: document.getElementById('product-component-1599001258100'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
+          "max-width": "100%",
+          "margin-left": "0",
           "margin-bottom": "50px"
-        }
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "32px"
       },
       "button": {
         "font-family": "Arial, sans-serif",
@@ -66,11 +70,35 @@
         "font-size": "17px",
         "padding-top": "16.5px",
         "padding-bottom": "16.5px"
+      },
+      "price": {
+        "font-size": "21px",
+        "color": "#ff0000"
+      },
+      "compareAt": {
+        "font-size": "17.849999999999998px",
+        "color": "#ff0000"
+      },
+      "unitPrice": {
+        "font-size": "17.849999999999998px",
+        "color": "#ff0000"
+      },
+      "description": {
+        "font-size": "16px"
       }
     },
     "buttonDestination": "checkout",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true,
+      "description": true
+    },
+    "width": "100%",
     "text": {
-      "button": "Buy now"
+      "button": "Launch Sale Buy Now."
     }
   },
   "productSet": {
@@ -224,7 +252,7 @@
       <h1 class="agenda">Agenda</h1>
       <section id="product">
         <article>
-          <div id='product-component-1598946750396' class="buyButtonAgenda"></div>          <!-- <img src="../photos/agendaCoverFinal.png" alt="logo-fourcorners"> -->
+          <div id='product-component-1599001258100' class="buyButtonFullAgenda"></div>          <!-- <img src="../photos/agendaCoverFinal.png" alt="logo-fourcorners"> -->
             <h2>Four Corners Wellness Agenda</h2>
             <p>We know that life can get stressful and busy, your agenda has been 
               designed with that in mind! 
@@ -234,6 +262,7 @@
               <cite>same or diff</cite>
               <i class="fasfa-paint-brush"></i></a>
             </p> -->
+
           <div class="container">
 
             <div class="mySlides">
@@ -279,7 +308,7 @@
               <p id="caption"></p>
             </div>
             
-            <div class="row">
+            <!-- <div class="row">
               <div class="column">
                 <img class="demo cursor" src="photos/samplePages/agendaMonthLeft.png" style="width: 100%;" onclick="currentSlide(1)" alt="agenda month left page">
               </div>
@@ -307,7 +336,7 @@
               <div class="column">
                 <img class="demo cursor" src="photos/samplePages/agendaGroundingExplained.png" style="width: 100%;" onclick="currentSlide(9)" alt="wellness grounding explained">
               </div>
-            </div>
+            </div> -->
           </div>
         </article>
       </section>
