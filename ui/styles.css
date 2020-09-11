@@ -129,6 +129,15 @@ article div {
   box-shadow: 0 0 8px 8px #e7edf0 inset;
   padding: 2px 0  25px 0;
 }
+article div.buyButtonFullAgenda {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 2%;
+  max-width: 100%;
+}
+article blockquote.instagram-media {
+  margin: 1rem auto 0;
+}
 img, .floatleft, .floatright {
   display: block;
   margin: 1rem auto 0 auto;
@@ -249,12 +258,6 @@ small, .text_small {
 }
 #product img {
   width: 400px;
-}
-#product div.buyButtonFullAgenda {
-  display: block;
-  margin: 1rem 10% 0;
-  padding: 2%;
-  max-width: 100%;
 }
 #product div.buyButtonAgenda {
   display: block;
