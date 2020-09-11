@@ -136,7 +136,10 @@ article div.buyButtonFullAgenda {
   max-width: 100%;
 }
 article div.instagramPost {
+  display: block;
   margin: 1rem auto 0;
+  padding: 2%;
+  max-width: 100%;
 }
 img, .floatleft, .floatright {
   display: block;
